@@ -23,19 +23,20 @@ for (let i = 0; i < 30; i++) {
 document.body.appendChild(table)
 
 table.addEventListener('click', (e) => {
-    
-    if (e.target.style.backgroundColor === 'rgb(255, 255, 255)') {
-        e.target.style.backgroundColor = 'rgb(0, 0, 0)'
-    } else e.target.style.backgroundColor = 'rgb(255, 255, 255)'
+
+    e.target.style.backgroundColor === 'rgb(255, 255, 255)' ?
+        e.target.style.backgroundColor = 'rgb(0, 0, 0)' :
+        e.target.style.backgroundColor = 'rgb(255, 255, 255)'
 
 })
 
 document.body.addEventListener('click', (e) => {
-    
+
     if (e.target === e.currentTarget) {
-        if (table.style.filter === 'invert(0)') {
-            table.style.filter = 'invert(1)'
-        } else table.style.filter = 'invert(0)'
+
+        table.style.filter === 'invert(0)' ?
+            table.style.filter = 'invert(1)' :
+            table.style.filter = 'invert(0)'
     }
-    
+
 })
