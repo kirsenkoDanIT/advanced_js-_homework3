@@ -23,15 +23,14 @@ for (let i = 0; i < 30; i++) {
 document.body.appendChild(table)
 
 table.addEventListener('click', (e) => {
-    console.log(e.currentTarget)
-    console.log(e.target)
+    
     if (e.target.style.backgroundColor === 'rgb(255, 255, 255)') {
         e.target.style.backgroundColor = 'rgb(0, 0, 0)'
     } else e.target.style.backgroundColor = 'rgb(255, 255, 255)'
 })
 
 document.body.addEventListener('click', (e) => {
-    console.log(e.target);
+    
     if (e.target === e.currentTarget) {
         if (table.style.filter === 'invert(0)') {
             table.style.filter = 'invert(1)'
