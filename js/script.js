@@ -27,6 +27,7 @@ table.addEventListener('click', (e) => {
     if (e.target.style.backgroundColor === 'rgb(255, 255, 255)') {
         e.target.style.backgroundColor = 'rgb(0, 0, 0)'
     } else e.target.style.backgroundColor = 'rgb(255, 255, 255)'
+
 })
 
 document.body.addEventListener('click', (e) => {
@@ -36,4 +37,5 @@ document.body.addEventListener('click', (e) => {
             table.style.filter = 'invert(1)'
         } else table.style.filter = 'invert(0)'
     }
+    
 })
