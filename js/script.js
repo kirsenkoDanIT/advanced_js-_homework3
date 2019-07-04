@@ -15,7 +15,6 @@ for (let i = 0; i < 30; i++) {
 document.body.appendChild(table)
 
 table.addEventListener('click', (e) => {
-
     e.target.classList.toggle('paint-cell')
     e.stopPropagation()
 })
