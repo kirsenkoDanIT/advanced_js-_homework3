@@ -1,0 +1,22 @@
+table {
+
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+
+    border: 2px solid grey;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+
+}
+
+.paint-cell {
+    background-color: #000;
+}
+
+.invert-table {
+    filter: invert(1)
+}
